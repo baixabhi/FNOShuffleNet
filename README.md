@@ -18,30 +18,6 @@ This project implements **FNOShuffleNet**, a neural network for image classifica
 2. **MaxPooling Layers** for downsampling.
 3. **Fully Connected Layer** for classification.
 
-## Installation
-```bash
-pip install torch torchvision
-```
-
-## Usage
-```python
-import torch
-from model import FNOShuffleNet
-
-# Load model
-model = FNOShuffleNet(num_classes=6)
-
-# Dummy input
-input_tensor = torch.randn(8, 3, 256, 256)
-output = model(input_tensor)
-print(output.shape)  # Output: (8, 6)
-```
-
-## Training
-Modify the dataset path and run:
-```python
-python train.py
-```
 
 ## Acknowledgments
 Built using **PyTorch** and inspired by **Fourier Neural Operators (FNO)** for efficient learning.
